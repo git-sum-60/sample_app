@@ -10,9 +10,8 @@ Rails.application.routes.draw do
   namespace :api do
     # url             controller    method/action in the controller
     get "/hello" => "example_pages#welcome"
-
     get "/table" => "example_pages#leg"
-
     get "/third_url" => "example_pages#another"
+    get "/buffalo" => "example_pages#bill"
   end
 end

@@ -9,6 +9,12 @@ class Api::ExamplePagesController < ApplicationController
 
   def another
     p "today is sunday"
+    @time = Time.now.strftime("%A, %b %d")    
+    p @time
     render 'sunday.json.jb'
+  end
+
+  def bill
+    render 'morning.json.jb'
   end
 end
