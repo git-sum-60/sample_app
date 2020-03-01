@@ -6,4 +6,9 @@ class Api::ExamplePagesController < ApplicationController
   def leg
     render json: {table: "top?"}
   end
+
+  def another
+    p "today is sunday"
+    render 'sunday.json.jb'
+  end
 end
